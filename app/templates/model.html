@@ -154,6 +154,7 @@
       box-shadow: 0 2px 18px #e0eafc44;
       animation: fadeInUp 2s;
       transition: transform 0.4s;
+      object-fit: contain;
     }
     .graph-placeholder img:hover {
       transform: scale(1.03);
@@ -189,11 +190,8 @@
       letter-spacing: 1px;
       animation: fadeInUp 2s;
     }
-    @media (max-width: 1400px) {
-      .graph-placeholder img {
-        max-width: 1000px;
-      }
-    }
+
+    /* Responsive Styles */
     @media (max-width: 1200px) {
       main {
         flex-direction: column;
@@ -212,6 +210,7 @@
       .left-content, .right-content {
         padding: 1.2rem 0.5rem;
         font-size: 1.05rem;
+        min-width: unset;
       }
       h2 {
         font-size: 1.3rem;
@@ -240,6 +239,21 @@
       }
       .graph-placeholder img {
         max-width: 99vw;
+      }
+      .left-content, .right-content {
+        padding: 0.7rem 0.3rem;
+        font-size: 0.98rem;
+      }
+    }
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .graph-placeholder {
+        font-size: 0.9rem;
       }
     }
   </style>
