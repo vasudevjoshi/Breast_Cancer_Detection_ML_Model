@@ -1,0 +1,199 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Awareness & Detection</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+            min-height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        .main-title {
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+        .title-main {
+            font-size: 3.2rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #e94560 0%, #9036e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin: 0 10px;
+            text-shadow: 0 2px 16px #e0eafc;
+        }
+        .title-highlight {
+            font-size: 3.7rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #e94560 30%, #9036e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin: 0 10px;
+            letter-spacing: 4px;
+            text-shadow: 0 2px 18px #e0eafc;
+        }
+        .title-sub {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #e94560 0%, #9036e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+        .marquee-container {
+            width: 100vw;
+            overflow: hidden;
+            background: linear-gradient(90deg, #e94560 0%, #9036e0 100%);
+            color: #fff;
+            margin-bottom: 32px;
+            margin-top: 18px;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100vw;
+            animation: marquee 22s linear infinite;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 16px #9036e0;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+        }
+        .sidebar {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            padding: 38px 24px 32px 24px;
+            width: 620px;
+            text-align: center;
+            transition: box-shadow 0.3s, transform 0.2s;
+            border: 2px solid #e9456022;
+            margin: 0 auto;
+        }
+        .sidebar:hover {
+            box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.25);
+            /* transform: translateY(-4px) scale(1.02); */
+        }
+        .sidebar h2 {
+            background: linear-gradient(90deg, #e94560 0%, #9036e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-size: 2.7rem;
+            margin-bottom: 38px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 12px #e0eafc;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin: 32px 0;
+        }
+        .sidebar a {
+            display: block;
+            padding: 28px 0;
+            background: linear-gradient(90deg, #e94560 0%, #9036e0 100%);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 14px;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 16px rgba(233, 69, 96, 0.13);
+            transition: background 0.3s, transform 0.2s;
+        }
+        .sidebar a:hover {
+            background: linear-gradient(90deg, #9036e0 0%, #e94560 100%);
+            transform: translateY(-2px) scale(1.04);
+        }
+        @media (max-width: 900px) {
+            .main-title {
+                margin-top: 18px;
+            }
+            .title-main, .title-highlight {
+                font-size: 2rem;
+            }
+            .title-highlight {
+                font-size: 2.3rem;
+            }
+            .title-sub {
+                font-size: 1.3rem;
+            }
+            .marquee {
+                font-size: 1.2rem;
+            }
+            .sidebar {
+                width: 98vw;
+                padding: 18px 2vw 18px 2vw;
+            }
+            .sidebar h2 {
+                font-size: 1.7rem;
+            }
+            .sidebar a {
+                font-size: 1.2rem;
+                padding: 16px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-title">
+        <span class="title-main">BREAST</span>
+        <span class="title-highlight">CANCER</span>
+        <span class="title-main">AWARENESS</span>
+        <span class="title-sub">& DETECTION</span>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee">
+            👋 Welcome to our Open Day! &nbsp; | &nbsp;
+            Together, we can make a difference in the fight against breast cancer. &nbsp; | &nbsp;
+            Use our <b>AI-powered detection tool</b> or explore resources to learn more. &nbsp; | &nbsp;
+            Awareness, knowledge, and early detection <b>save lives</b>!
+        </div>
+    </div>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Get Started</h2>
+            <ul>
+                <li><a href="/check_breast_cancer">AI-BASED Breast Cancer Detector</a></li>
+                <li><a href="https://breastcancerdetectionusingpython.netlify.app/">Know About Breast Cancer</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
