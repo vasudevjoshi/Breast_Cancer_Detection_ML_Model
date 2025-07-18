@@ -27,4 +27,3 @@ pandas
 matplotlib
 seaborn
 scikit-learn
-Flask-Babel==3.1.0
